@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Skateboarding Tricks</title>
+  <title>Skateboarding Tricks!</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Link to an external stylesheet, if needed -->
   <link rel="stylesheet" href="style.css">
   <style>
     body {
@@ -41,23 +42,18 @@
 
     .trick-list {
       display: flex;
-      justify-content: space-around;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
     }
 
     .trick-category {
       text-align: center;
-      background-color: white;
+      background-color: #fff;
       padding: 15px;
       border-radius: 10px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-      flex: 1 1 200px;
-    }
-
-    .trick-category.full {
-      margin: 20px auto 0 auto;
-      max-width: 400px;
+      width: 300px;
     }
 
     img {
@@ -76,7 +72,7 @@
       padding: 10px 20px;
       font-size: 16px;
       font-weight: bold;
-      color: white;
+      color: #fff;
       background-color: #3b82f6;
       border: none;
       border-radius: 8px;
@@ -89,12 +85,32 @@
     }
 
     ul {
-      list-style: none;
-      padding-left: 0;
+      list-style-type: disc;
+      text-align: left;
+      padding-left: 20px;
     }
 
-    li {
-      margin-bottom: 8px;
+    footer {
+      background-color: #1e3a8a;
+      color: #fff;
+      padding: 8px 0;
+      font-size: 14px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+    footer a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -113,7 +129,7 @@
     <h2>Different Tricks</h2>
     <div class="trick-list">
       <div class="trick-category">
-        <h3>Flip Tricks</h3>
+        <h3>1. Flip Tricks</h3>
         <ul>
           <li>Kickflip</li>
           <li>Heelflip</li>
@@ -122,7 +138,7 @@
         </ul>
       </div>
       <div class="trick-category">
-        <h3>Shuv Tricks</h3>
+        <h3>2. Shuv Tricks</h3>
         <ul>
           <li>Back shuv</li>
           <li>Front shuv</li>
@@ -131,8 +147,8 @@
         </ul>
       </div>
     </div>
-    <div class="trick-category full">
-      <h3>Rail Tricks</h3>
+    <div class="trick-category" style="margin: 30px auto 0 auto;">
+      <h3>3. Rail Tricks</h3>
       <ul>
         <li>50-50 Grind</li>
         <li>Front Boardslide</li>
@@ -155,12 +171,46 @@
 
   <div class="box">
     <h2>Skateboard Trick Difficulty</h2>
-    <div class='tableauPlaceholder' id='viz1744409895754' style='position: relative'><noscript><a href='#'><img alt='Trick Difficulty ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;is&#47;is201-FinalProject&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='is201-FinalProject&#47;Sheet2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;is&#47;is201-FinalProject&#47;Sheet2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1744409895754');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <div class="tableauPlaceholder" id="viz1744411028279" style="position: relative">
+      <noscript>
+        <a href="#">
+          <img alt="Trick Difficulty" src="https://public.tableau.com/static/images/is/is201-FinalProject/Sheet2/1_rss.png" style="border: none">
+        </a>
+      </noscript>
+      <object class="tableauViz" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F">
+        <param name="embed_code_version" value="3">
+        <param name="site_root" value="">
+        <param name="name" value="is201-FinalProject/Sheet2">
+        <param name="tabs" value="no">
+        <param name="toolbar" value="yes">
+        <param name="static_image" value="https://public.tableau.com/static/images/is/is201-FinalProject/Sheet2/1.png">
+        <param name="animate_transition" value="yes">
+        <param name="display_static_image" value="yes">
+        <param name="display_spinner" value="yes">
+        <param name="display_overlay" value="yes">
+        <param name="display_count" value="yes">
+        <param name="language" value="en-US">
+      </object>
+    </div>
+    <script type="text/javascript">
+      var divElement = document.getElementById('viz1744411028279');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '100%';
+      vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+  </div>
 
   <div class="box" style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); border: 2px solid #3b82f6;">
     <h2>Try a Trick Challenge?</h2>
     <img src="images/skateboard.jpg" alt="Skateboard Icon" style="width: 100px; border-radius: 50%; margin-top: 10px;">
-    <p>Launch the <strong>Test Your Skills</strong> to get a random trick, see the difficulty rating, and mark it if you can do it. The ultimate skateboarder challenge!</p>
+    <p>
+      Launch the <strong>Test Your Skills</strong> to get a random trick, see the difficulty rating, and mark it if you can do it.
+      The ultimate skateboarder challenge!
+    </p>
     <a href="webapp.html">
       <button class="cool-button">Test Your Skills</button>
     </a>
@@ -169,12 +219,16 @@
   <div class="box">
     <h2>My Resume</h2>
     <p>
-      Want to learn more about the creator/author?
-      <br><br>
+      Want to learn more about the creator/author?<br><br>
       <a href="resume.html" style="font-size: 18px; color: #1e3a8a; font-weight: bold;">
         Click here to view my resume
       </a>
     </p>
   </div>
+
+  <br><br><br><br>
+  <footer>
+    <p>&copy; 2025 Alex Meyer | <a href="#top">Back to Top</a></p>
+  </footer>
 </body>
 </html>
