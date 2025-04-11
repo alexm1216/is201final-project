@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Skateboarding Tricks!</title>
+  <title>Skateboarding Tricks</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
@@ -31,7 +31,7 @@
       background-color: #e5e7eb;
       margin: 30px auto;
       padding: 20px;
-      max-width: 900px;
+      max-width: 750px;
       border-radius: 10px;
     }
 
@@ -39,10 +39,25 @@
       color: #1e40af;
     }
 
-    ol, ul {
-      text-align: left;
-      display: inline-block;
-      margin: 0 auto;
+    .trick-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .trick-category {
+      text-align: center;
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      flex: 1 1 200px;
+    }
+
+    .trick-category.full {
+      margin: 20px auto 0 auto;
+      max-width: 400px;
     }
 
     img {
@@ -72,6 +87,15 @@
     .cool-button:hover {
       background-color: #2563eb;
     }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
   </style>
 </head>
 <body>
@@ -88,32 +112,33 @@
   <div class="box">
     <h2>Different Tricks</h2>
     <div class="trick-list">
-      <ol>
-        <li>Flip Tricks
-          <ul>
-            <li>Kickflip</li>
-            <li>Heelflip</li>
-            <li>Treflip</li>
-            <li>Lazerflip</li>
-          </ul>
-        </li>
-        <li>Shuv Tricks
-          <ul>
-            <li>Back shuv</li>
-            <li>Front shuv</li>
-            <li>Three shuv</li>
-            <li>Big Spin</li>
-          </ul>
-        </li>
-        <li>Rail Tricks
-          <ul>
-            <li>50-50 Grind</li>
-            <li>Front Boardslide</li>
-            <li>Crook Grind</li>
-            <li>Smith Grind</li>
-          </ul>
-        </li>
-      </ol>
+      <div class="trick-category">
+        <h3>Flip Tricks</h3>
+        <ul>
+          <li>Kickflip</li>
+          <li>Heelflip</li>
+          <li>Treflip</li>
+          <li>Lazerflip</li>
+        </ul>
+      </div>
+      <div class="trick-category">
+        <h3>Shuv Tricks</h3>
+        <ul>
+          <li>Back shuv</li>
+          <li>Front shuv</li>
+          <li>Three shuv</li>
+          <li>Big Spin</li>
+        </ul>
+      </div>
+    </div>
+    <div class="trick-category full">
+      <h3>Rail Tricks</h3>
+      <ul>
+        <li>50-50 Grind</li>
+        <li>Front Boardslide</li>
+        <li>Crook Grind</li>
+        <li>Smith Grind</li>
+      </ul>
     </div>
   </div>
 
@@ -130,22 +155,9 @@
 
   <div class="box">
     <h2>Skateboard Trick Difficulty</h2>
-    <div class="tableauPlaceholder" id="vizContainer"></div>
-    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
-    <script type="text/javascript">
-      var containerDiv = document.getElementById("vizContainer");
-      var vizURL = "https://public.tableau.com/views/is201-FinalProject/Sheet2?:language=en-US&:display_count=n&:origin=viz_share_link";
-      var options = {
-        width: "100%",
-        height: "500px",
-        hideTabs: true,
-        hideToolbar: false
-      };
-      new tableau.Viz(containerDiv, vizURL, options);
-    </script>
-  </div>
+    <div class='tableauPlaceholder' id='viz1744409895754' style='position: relative'><noscript><a href='#'><img alt='Trick Difficulty ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;is&#47;is201-FinalProject&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='is201-FinalProject&#47;Sheet2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;is&#47;is201-FinalProject&#47;Sheet2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1744409895754');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
-  <div class="box" style="background: linear-gradient(135deg, #8b95ea, #5f68c7);">
+  <div class="box" style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); border: 2px solid #3b82f6;">
     <h2>Try a Trick Challenge?</h2>
     <img src="images/skateboard.jpg" alt="Skateboard Icon" style="width: 100px; border-radius: 50%; margin-top: 10px;">
     <p>Launch the <strong>Test Your Skills</strong> to get a random trick, see the difficulty rating, and mark it if you can do it. The ultimate skateboarder challenge!</p>
